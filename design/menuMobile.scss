@@ -1,0 +1,159 @@
+@media (min-width: 320px ) and (max-width: 768px)  {
+
+#imgTop {
+    z-index:1;
+    margin-top: 70px;
+    position:relative;
+}
+
+#imgTop img {
+    min-width:100%;
+    max-height:300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#menu {
+    border-radius: 40px 40px 0 0 ;
+    width:100%;
+    background-color:#eeeeee;
+    z-index:2;
+    margin-top:-50px;
+    position:relative;
+    padding-bottom: 20px;
+}
+
+#menu h1 {
+    font-family: 'Shrikhand', cursive;
+    padding:0;
+    margin:0;
+    font-weight: normal;
+}
+
+.topMenu a {
+    color:#000;
+}
+
+.topMenu {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px;
+}
+
+.plats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plats button {
+    background:linear-gradient(to top left,#9356DC,#FF79DA);
+    color:#ffffff;
+    border-radius: 30px;
+    border: none;
+    font-size:1em;
+    font-family:'RobotoReg';
+    font-weight: bold;
+    padding:15px 35px;
+    margin: 40px 0 40px 0;
+    box-shadow: 0 3px 8px #acacac;
+}
+
+.plats button:hover {
+    box-shadow: 3px 0px 8px #969696;
+    background:linear-gradient(to bottom right,#9356DC,#FF79DA);
+}
+
+.plats button a {
+    color:#ffffff;
+}
+
+.titre {
+    padding: 30px 0 10px 30px;
+}
+
+.titre h4 {
+    padding:0;
+    margin:0;
+    font-weight:lighter;
+}
+
+.titre hr {
+    padding:0;
+    margin:8px 0 0 0;
+}
+
+.detailsPlat {
+    display: flex;
+    align-items: center;
+    height:70px;
+    width:90%;
+    background:#fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(211, 211, 211);
+    margin:10px 0;
+    overflow:hidden;
+    transition-duration:0.5s;
+
+}
+
+.detailsPlat .far.fa-check-circle a {
+    color:#ffffff;
+}
+
+.detailsPlat .far.fa-check-circle {
+    transform:translateX(70px);
+    transition-duration:0.5s;
+    background:gray;
+}
+
+.detailsPlat:hover .far.fa-check-circle {
+    transform:translateX(0px);
+    width:70px;
+    text-align: center;
+    height:100%;
+}
+
+.detailsPlat:hover .detailsPlatContent {
+    width:calc(100% - 70px);
+}
+
+.detailsPlatContent {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    transition-duration:0.5s;
+}
+
+.detailsPlat > div {
+    flex-grow:1;
+}
+
+.detailsPlat h3 {
+    font-family:'RobotoReg';
+    margin:0 0 0 10px;
+    padding:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.detailsPlat p {
+    margin:0 0 0 10px;
+    padding:5px 0 0 0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.detailsPlat span {
+    position:relative;
+    font-family: 'RobotoReg';
+    font-weight: bold;
+    font-size: 0.9em;
+    z-index:50;
+    margin: 30px 0 0 0;
+}
+
+}
