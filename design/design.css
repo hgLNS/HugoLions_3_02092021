@@ -7,7 +7,9 @@ html, body{
     scrollbar-width: none;
 }
 
+
 #containerLoader {
+    display:flex;
     justify-content: center;
     align-items: center;
     position:fixed;
@@ -32,19 +34,15 @@ html, body{
 @keyframes loader {
     0% {
         opacity:1;
-        display:flex!important;
     }
     80% {
         opacity:1;
-        display:flex!important;
     }
     90% {
         opacity:0;
-        display:flex!important;
     }
     100% {
         opacity:0;
-        display:none;
     }
 
 }
@@ -57,6 +55,7 @@ html, body{
         transform:rotate(360deg);
     }
 }
+
 
 a {
     text-decoration: none;
@@ -394,8 +393,20 @@ span.icon.heart {
     box-shadow: 0px 0px 5px rgb(211, 211, 211);
     margin:10px 0;
     overflow:hidden;
-    transition-duration:0.5s;
+    animation:slidein 1.5s; 
 }
+
+@keyframes slidein {
+    0% {
+        margin-top:40px;
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
 
 .detailsPlat .fas.fa-check-circle a {
     color:#ffffff;
@@ -404,6 +415,8 @@ span.icon.heart {
 .detailsPlat .fas.fa-check-circle {
     color:#ffffff;
     font-size:1.5em;
+    transform:rotate(360deg);
+    transition-duration: 0.5s;
 }
 
 .detailsPlat a {
@@ -412,6 +425,8 @@ span.icon.heart {
     align-items: center;
     transform:translateX(70px);
     transition-duration:0.5s;
+    height:71px;
+
 }
 
 .detailsPlat:hover a {
@@ -426,12 +441,16 @@ span.icon.heart {
     width:calc(100% - 70px);
 }
 
+.detailsPlat:hover .fas {
+    transform:rotate(360deg);
+}
+
 .detailsPlatContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width:100%;
-    transition-duration:0.5s;
+    transition-duration:1s;
 }
 
 .detailsPlat > div {
@@ -467,8 +486,6 @@ span.icon.heart {
     z-index:50;
     margin: 30px 10px 0 0;
 }
-
-
 
 /* Footer */
 
