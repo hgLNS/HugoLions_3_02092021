@@ -27,6 +27,27 @@
         font-weight: normal;
     }
     
+    button {
+        background:linear-gradient(to top left,#9356DC,#FF79DA);
+        color:#ffffff;
+        border-radius: 30px;
+        border: none;
+        font-size:1em;
+        font-family:'RobotoReg';
+        font-weight: bold;
+        padding:15px 35px;
+        margin: 40p 0 40px 0;
+        box-shadow: 0 3px 8px #acacac;
+        
+        &:hover {
+            box-shadow: 3px 0px 8px #969696;
+            background:linear-gradient(to bottom right,#9356DC,#FF79DA);
+        }
+    
+        a {
+            color:#ffffff;
+        }
+    }
 }
 
 .topMenu {
@@ -50,27 +71,7 @@
     }
 }
 
-.plats button {
-    background:linear-gradient(to top left,#9356DC,#FF79DA);
-    color:#ffffff;
-    border-radius: 30px;
-    border: none;
-    font-size:1em;
-    font-family:'RobotoReg';
-    font-weight: bold;
-    padding:15px 35px;
-    margin: 40px 0 40px 0;
-    box-shadow: 0 3px 8px #acacac;
-    
-    &:hover {
-        box-shadow: 3px 0px 8px #969696;
-        background:linear-gradient(to bottom right,#9356DC,#FF79DA);
-    }
 
-    a {
-        color:#ffffff;
-    }
-}
 
 .titre {
     padding: 30px 0 10px 30px;

@@ -317,6 +317,25 @@ span.icon.heart {
   margin: 0;
   font-weight: normal;
 }
+#menu button {
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  font-size: 1em;
+  font-family: "RobotoReg";
+  font-weight: bold;
+  padding: 15px 35px;
+  margin: 40p 0 40px 0;
+  box-shadow: 0 3px 8px #acacac;
+}
+#menu button:hover {
+  box-shadow: 3px 0px 8px #969696;
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+}
+#menu button a {
+  color: #ffffff;
+}
 
 .topMenu {
   display: flex;
@@ -335,26 +354,6 @@ span.icon.heart {
 }
 .sectionMenu > div {
   padding: 30px;
-}
-
-.plats button {
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
-  color: #ffffff;
-  border-radius: 30px;
-  border: none;
-  font-size: 1em;
-  font-family: "RobotoReg";
-  font-weight: bold;
-  padding: 15px 35px;
-  margin: 40px 0 40px 0;
-  box-shadow: 0 3px 8px #acacac;
-}
-.plats button:hover {
-  box-shadow: 3px 0px 8px #969696;
-  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
-}
-.plats button a {
-  color: #ffffff;
 }
 
 .titre {
@@ -526,6 +525,10 @@ footer a:hover {
   }
   .sectionMenu > div {
     padding: 0;
+  }
+
+  #menu button {
+    margin: 40px 0 40px 0;
   }
 
   .detailsPlat {
