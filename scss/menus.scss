@@ -25,6 +25,7 @@
         padding:0;
         margin:0;
         font-weight: normal;
+        font-size:1.8em;
     }
     
     button {
@@ -85,8 +86,9 @@
 }
 
 .ligne {
-    width:30px;
-    color:#99E2D0;
+    width:60px;
+    border:none;
+    border-top:3px solid #99E2D0;
 }
 
 .titre hr {
