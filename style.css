@@ -160,7 +160,7 @@ nav button {
   position: relative;
 }
 nav button:hover {
-  background: #87cefa3d;
+  background: #F5EDFF;
 }
 nav button .fas {
   margin: 0 30px 0 20px;
@@ -180,21 +180,21 @@ nav span {
   position: absolute;
   margin-left: -35px;
 }
-nav h1 {
+nav h2 {
   padding: 20px;
 }
 nav .active .fas {
   color: #9356DC;
 }
 nav .active button {
-  background: #87cefa3d;
+  background: #F5EDFF;
 }
 
 #restaurants {
   background: #f7f7f7;
 }
 
-#restaurants h1 {
+#restaurants h2 {
   padding: 50px 0 0 17px;
 }
 
@@ -363,7 +363,7 @@ span.icon.heart {
 .titre {
   padding: 30px 0 10px 30px;
 }
-.titre h4 {
+.titre h2 {
   padding: 0;
   margin: 0;
   font-weight: lighter;
@@ -371,7 +371,7 @@ span.icon.heart {
 
 .ligne {
   width: 30px;
-  color: gray;
+  color: #99E2D0;
 }
 
 .titre hr {
@@ -469,14 +469,15 @@ footer img {
   width: 100px;
   padding: 25px;
 }
-footer p {
+footer ul {
   padding: 0 0 0 25px;
   line-height: 23px;
   color: #fff;
   font-size: 0.9em;
   margin: 0;
+  list-style: none;
 }
-footer p .fas {
+footer ul .fas {
   margin-right: 10px;
 }
 footer a {
